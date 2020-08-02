@@ -45,7 +45,12 @@
           <li class="nav-item"><a class="nav-link" href="{{ route('register') }}">注册</a></li>
   
           @else
-  
+          <li class="nav-item">
+            <a class="nav-link mt-1 mr-3 font-weight-bold" href="{{ route('topics.create') }}">
+              <i class="fa fa-plus"></i> <span>发布帖子</span>
+            </a>
+          </li>
+
           <li class="nav-item dropdown">
               
   
