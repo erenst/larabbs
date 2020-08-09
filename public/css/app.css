@@ -17578,6 +17578,7 @@ body {
 .topics-index-page .topic-list .meta a,
 .categories-show-page .topic-list .meta a {
   color: #b3b3b3;
+  position: relative;
 }
 
 .topics-index-page .topic-list .badge,

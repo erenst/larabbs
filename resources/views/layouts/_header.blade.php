@@ -34,7 +34,7 @@
   
       <!-- Right Side Of Navbar -->
   
-      <ul class="navbar-nav navbar-right">
+      <ul class="navbar-nav navbar-right align-middle">
   
           <!-- Authentication Links -->
   
@@ -49,6 +49,21 @@
             <a class="nav-link mt-1 mr-3 font-weight-bold" href="{{ route('topics.create') }}">
               <i class="fa fa-plus"></i> <span>发布帖子</span>
             </a>
+          </li>
+          <li class="nav-item">
+            {{-- <a class="nav-link mr-3 badge badge-pill 
+                      badge-{{ Auth::user()->notification_count > 0 ? 'hint' : 'secondary' }} text-white" 
+                href="{{ route('notifications.index') }}">
+                {{ Auth::user()->notification_count }}
+            </a> --}}
+            <a class="nav-link mt-1 mr-3 font-weight-bold align-top" href="{{ route('notifications.index') }}">
+              <i class="far fa-envelope"></i>
+              <span>通知</span> 
+              <span class="badge badge-pill {{ Auth::user()->notification_count > 0 ? 'badge-danger' : '' }} text-white">
+                {{ Auth::user()->notification_count }}
+              </span>
+            </a>
+            
           </li>
 
           <li class="nav-item dropdown">
