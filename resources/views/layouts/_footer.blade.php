@@ -10,7 +10,7 @@
   
   
   
-      <p class="float-right"><a href="mailto:erenst2002@hotmail.com">联系Erenst</a></p>
+      <p class="float-right"><a href="mailto:{{ setting('contact_email') }}">联系我们</a></p>
   
     </div>
   
