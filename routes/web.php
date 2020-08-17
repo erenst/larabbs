@@ -13,7 +13,8 @@
 Route::get('test', function () {
     return DB::select('select * from users');
 });
-Route::get('/', 'PagesController@root')->name('root');
+
+Route::get('/', 'TopicsController@index')->name('root');
 
 // Auth::routes();
 
